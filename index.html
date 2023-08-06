@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="CSS/fontawesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Work+Sans:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calc bg-white">
+            <form class="first  d-flex" method="get">
+                <div class="box"> 
+                    <label for="one">DAY</label>
+                    <input type="text" placeholder="DD" id="one" name="one" class="haha" maxlength="2">
+                </div>
+                <div class="box">
+                    <label for="two">MONTH</label>
+                    <input type="text" placeholder="MM" id="two" name="two" class="haha2" maxlength="2">
+                </div>
+                <div class="box">
+                    <label for="three">YEAR</label>
+                    <input type="text" placeholder="YYYY" id="three" name="three" class="haha3" maxlength="4">
+                </div>
+            </form>
+            <div class="second">
+                <button type="submit" class="butt">
+                    <img src="assets/images/icon-arrow.svg" alt="arrow">
+                </button>
+                <div class="line"></div>
+            </div>
+            <div class="third">
+                <p><span class="fone">- - </span>years</p>
+                <p><span class="ftwo">- - </span>months</p>
+                <p><span class="fthree">- - </span>days</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

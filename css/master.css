@@ -1,0 +1,137 @@
+:root {
+    --main-color: rgba(134,76,255,255);
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.main {
+    background-image: url(../assets/pexels-j-r-11010692.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.main .calc {
+    position: absolute;
+    padding: 30px;
+    width: 500px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px 180px 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+}
+.main .box {
+    position: relative;
+}
+.main label {
+    position: absolute;
+}
+.main .calc input[type = text] {
+    width: 83px;
+    height: 45px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    position: relative;
+}
+.main .calc label {
+    position: absolute;
+    top: 2px;
+    left: 18px;
+    font-size: 8px;
+    font-weight: bold;
+    color: #808080;
+}
+.main .calc input[type = text]:focus {
+    outline: 1px solid var(--main-color);
+}
+.main .calc input[type = text]:focus::placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+.main .second {
+    position: relative;
+}
+.main .second .butt {
+    top: -21px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border: none;
+}
+.main .second .butt:hover {
+    background-color: black;
+}
+.main .second .line {
+    height: 1px;
+    width: 365px;
+    top: 10px;
+    left: 5px;
+    position: absolute;
+    background-color: #eee;
+}
+.main .third {
+    margin-top: 24px;
+}
+.main .third p {
+    font-size: 65px;
+    margin-left: 10px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -29px;
+}
+.main .third p span {
+    color: var(--main-color);
+}
+.first .msg {
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    top: 97px;
+    left: 45px;
+    font-weight: bold;
+}
+@media (max-width: 576px) { 
+    .main .calc {
+        width: 340px;
+        height: 535px;
+    }
+    .main .calc input[type = text] {
+        width: 68px;
+        height: 50px;
+        margin: 15px 15px 35px;
+    }
+    .main .second .butt {
+        top: -17px;
+        right: 105px;
+    }
+    .main .second .line {
+        width: 281px;
+    }
+    .main .third {
+        margin-top: 75px;
+    }
+    .main .third p {
+        font-size: 48px;
+        margin-bottom: 22px;
+    }
+    
+}
+
